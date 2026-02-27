@@ -17,7 +17,7 @@ public class TesteCliente {
         ObjCliente.setAltura(Double.parseDouble(JOptionPane.showInputDialog("Informe a sua altura: ")));
 
         // sout
-        System.out.println(
+        JOptionPane.showMessageDialog(null,
                 "Nome: " + ObjCliente.getNome() +
                 "\n\nCPF: " + ObjCliente.getCpf() +
                 "\n\nIdade: " + ObjCliente.getIdade() +
