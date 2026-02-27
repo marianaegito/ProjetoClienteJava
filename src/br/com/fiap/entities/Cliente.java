@@ -6,6 +6,7 @@ public class Cliente {
     private String nome, cpf; //Joao123 ou 111.111.111-11
     private int idade; // 18
     private double altura; //1.56
+    private boolean verdadeiroOufalso;
 
     // Métodos setters (entrada), void é para guardar no atributo e não retornar ou exibir
     public void setNome(String nome){
@@ -40,4 +41,18 @@ public class Cliente {
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
+    // Sobrescrever as informações do objeto em String
+    // Botão direito, Geneate e toString:
+    @Override
+    public String toString() {
+        return "Cliente{" +
+                "\n\nnome='" + nome + '\'' +
+                "\n\ncpf='" + cpf + '\'' +
+                "\n\nidade=" + idade +
+                "\n\naltura=" + altura +
+                "\n\nverdadeiroOufalso=" + verdadeiroOufalso +
+                '}';
+    }
 }
+
