@@ -7,6 +7,7 @@ public class Cliente {
     private int idade; // 18
     private double altura; //1.56
     private boolean verdadeiroOufalso;
+    private Endereco endereco; // Atributo de referência
 
     // Métodos setters (entrada), void é para guardar no atributo e não retornar ou exibir
     public void setNome(String nome){
@@ -38,9 +39,19 @@ public class Cliente {
         return altura;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
+
     public void setAltura(double altura) {
         this.altura = altura;
     }
+
+
 
     // Sobrescrever as informações do objeto em String
     // Botão direito, Geneate e toString:
